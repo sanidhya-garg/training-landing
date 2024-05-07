@@ -144,9 +144,12 @@ const HomeHero: FC = () => {
               </Box>
               <Box sx={{ '& button': { mr: 2 } }}>
                 <ScrollLink to="popular-course" spy={true} smooth={true} offset={0} duration={350}>
-                  <StyledButton color="primary" size="large" variant="contained">
-                    Get Started
-                  </StyledButton>
+                  <a href="https://training.unipace.in/sign-in" style={{ textDecoration: 'none' }}>
+
+                    <StyledButton color="primary" size="large" variant="contained">
+                      Get Started
+                    </StyledButton>
+                  </a>
                 </ScrollLink>
                 <ScrollLink to="video-section" spy={true} smooth={true} offset={0} duration={350}>
                   <StyledButton color="primary" size="large" variant="outlined" startIcon={<PlayArrowIcon />}>

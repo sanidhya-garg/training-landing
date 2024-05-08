@@ -1,4 +1,4 @@
-import React, { FC } from 'react'
+import React, { FC, useEffect } from 'react'
 import Box from '@mui/material/Box'
 import Grid from '@mui/material/Grid'
 import Slider, { Settings } from 'react-slick'
@@ -62,6 +62,10 @@ const HomePopularCourse: FC = () => {
   const { breakpoints } = useTheme()
   const matchMobileView = useMediaQuery(breakpoints.down('md'))
 
+  useEffect(() => {
+    console.table(data)
+  })
+
   const sliderConfig: Settings = {
     infinite: true,
     autoplay: true,
@@ -108,11 +112,14 @@ const HomePopularCourse: FC = () => {
           </Grid>
 
           <Grid item xs={12} md={9}>
-            <Slider {...sliderConfig}>
+            {/* <Slider {...sliderConfig}> */}\
+            {/* put slider inplace of Box when the number of courses more than 2  */}
+            <Box sx={{ height: 8, width: 300, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} >
               {data.map((item) => (
-                <CourseCardItem key={String(item.id)} item={item} />
+                <CourseCardItem key={String(item.id)} item={item}/>
               ))}
-            </Slider>
+            </Box>
+            {/* </Slider> */}
           </Grid>
         </Grid>
       </Container>

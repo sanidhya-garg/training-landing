@@ -4,7 +4,7 @@ export const data: Array<Mentor> = [
   {
     id: 1,
     photo: '/images/mentors/jonas-kakaroto-KIPqvvTOC1s-unsplash.jpg',
-    name: 'Arush',
+    name: 'Arush Bansal',
     category: 'Full Stack Development',
     description:
       'I am Arush Bansal your coding buddy. With expertise in frontend/backend web development, frameworks like Node.js, and databases like MongoDB etc .I will provides guidance to help you navigate the complexities of Full Stack Development with confidence.',

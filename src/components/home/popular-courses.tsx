@@ -112,7 +112,7 @@ const HomePopularCourse: FC = () => {
           </Grid>
 
           <Grid item xs={12} md={9}>
-            {/* <Slider {...sliderConfig}> */}\
+            {/* <Slider {...sliderConfig}> */}
             {/* put slider inplace of Box when the number of courses more than 2  */}
             <Box sx={{ height: 8, width: 300, backgroundColor: 'divider', display: 'inline-block', borderRadius: 4 }} >
               {data.map((item) => (

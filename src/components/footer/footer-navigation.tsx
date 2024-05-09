@@ -28,10 +28,10 @@ const courseMenu: Array<Navigation> = [
 const pageMenu = headerNavigations
 
 const companyMenu: Array<Navigation> = [
-  { label: 'Contact Us', path: '#' },
+  { label: 'Contact Us', path: 'https://wa.me/919717538010' },
   { label: 'Privacy & Policy', path: '#' },
   { label: 'Term & Condition', path: '#' },
-  { label: 'FAQ', path: '#' },
+  { label: 'FAQ', path: 'http://unipace.tawk.help/' },
 ]
 
 interface NavigationItemProps {
